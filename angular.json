@@ -104,5 +104,8 @@
       }
     }
   },
-  "defaultProject": "mtgAssistant"
+  "defaultProject": "mtgAssistant",
+  "cli": {
+    "analytics": "43ebc938-8fb8-40ad-9a32-7f8a4da1cd48"
+  }
 }

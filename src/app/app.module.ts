@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './Components/HomeGroup/home/home.component';
 import { MainPageSuperComponent } from './Components/MainPageGroup/main-page-super/main-page-super.component';
+import { DevHelpComponent } from './dev-help/dev-help.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    MainPageSuperComponent
+    MainPageSuperComponent,
+    DevHelpComponent
   ],
   imports: [
     BrowserModule,
