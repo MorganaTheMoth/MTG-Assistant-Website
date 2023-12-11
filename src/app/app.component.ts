@@ -11,7 +11,4 @@ export class AppComponent {
     constructor(private router: Router) {
 
     }
-	public navToCDevHelp() : void{
-		this.router.navigate(['/devHelp']);
-	}
 }

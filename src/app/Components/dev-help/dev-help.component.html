@@ -423,13 +423,13 @@
   </div>
 
   <!-- Terminal -->
-  <div class="terminal" [ngSwitch]="selection.value">
+  <div class="terminal">
     <pre *ngSwitchDefault>ng generate component xyz</pre>
-    <pre *ngSwitchCase="'material'">ng add &#64;angular/material</pre>
-    <pre *ngSwitchCase="'pwa'">ng add &#64;angular/pwa</pre>
-    <pre *ngSwitchCase="'dependency'">ng add _____</pre>
-    <pre *ngSwitchCase="'test'">ng test</pre>
-    <pre *ngSwitchCase="'build'">ng build</pre>
+    <p>ng add &#64;angular/material</p>
+    <p>ng add &#64;angular/pwa</p>
+    <p>ng add _____</p>
+    <p>ng test</p>
+    <p>ng build</p>
   </div>
 
   <!-- Links -->
