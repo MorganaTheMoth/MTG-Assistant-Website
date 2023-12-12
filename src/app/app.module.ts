@@ -9,7 +9,7 @@ import {LifeTrackerComponent} from "./Components/life-tracker/life-tracker.compo
 
 
 const appRoutes: Routes = [
-  {path:'devHelp', component: DevHelpComponent},
+	{path:'devHelp', component: DevHelpComponent},
 	{path: 'lifeTracker', component: LifeTrackerComponent},
 	{path:'home', component: HomeComponent, pathMatch:"full"},
 	{path:"**", redirectTo:'home'}
