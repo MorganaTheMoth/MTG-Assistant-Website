@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-life-tracker',
-  standalone: true,
-  imports: [],
+  standalone: false,
   templateUrl: './life-tracker.component.html',
   styleUrl: './life-tracker.component.css'
 })

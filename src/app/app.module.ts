@@ -1,24 +1,34 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { RouterModule, Routes } from '@angular/router';
+import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {HomeComponent} from "./Components/home/home.component";
 import {DevHelpComponent} from "./Components/dev-help/dev-help.component";
+import {LifeTrackerComponent} from "./Components/life-tracker/life-tracker.component";
+
+
+const appRoutes: Routes = [
+  {path:'devHelp', component: DevHelpComponent},
+	{path: 'lifeTracker', component: LifeTrackerComponent},
+	{path:'home', component: HomeComponent, pathMatch:"full"},
+	{path:"**", redirectTo:'home'}
+];
 
 @NgModule({
+  imports: [
+    BrowserModule,
+    FormsModule,
+    RouterModule.forRoot(
+      appRoutes, {enableTracing: true}
+    )
+  ],
   declarations: [
     AppComponent,
     HomeComponent,
-    DevHelpComponent
+    DevHelpComponent,
+    LifeTrackerComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
-  ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
