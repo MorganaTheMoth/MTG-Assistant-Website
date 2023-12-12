@@ -1,7 +1,22 @@
-<h1>Angular Router</h1>
-<nav>
-    <a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
-    <a routerLink="/devHelp" routerLinkActive="active" ariaCurrentWhenActive="page">Dev Help</a>
-    <a routerLink="/lifeTracker" routerLinkActive="active" ariaCurrentWhenActive="page">Life Tracker</a>
+<!--TopBar-->
+<nav class="navBar">
+	<button mat-raised-button
+	        routerLink="/home"
+	        routerLinkActive="active"
+	        ariaCurrentWhenActive="page">
+		<a>Home</a>
+	</button>
+	<button mat-raised-button
+	        routerLink="/devHelp"
+	        routerLinkActive="active"
+	        ariaCurrentWhenActive="page">
+		<a>Dev Help</a>
+	</button>
+	<button mat-raised-button
+	        routerLink="/lifeTracker"
+	        routerLinkActive="active"
+	        ariaCurrentWhenActive="page">
+		<a>Life Tracker</a>
+	</button>
 </nav>
 <router-outlet></router-outlet>

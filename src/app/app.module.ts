@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import {HomeComponent} from "./Components/home/home.component";
 import {DevHelpComponent} from "./Components/dev-help/dev-help.component";
 import {LifeTrackerComponent} from "./Components/life-tracker/life-tracker.component";
+import {MatButtonModule} from "@angular/material/button";
 
 
 const appRoutes: Routes = [
@@ -16,13 +17,14 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    FormsModule,
-    RouterModule.forRoot(
-      appRoutes, {enableTracing: true}
-    )
-  ],
+	imports: [
+		BrowserModule,
+		FormsModule,
+		RouterModule.forRoot(
+			appRoutes, {enableTracing: true}
+		),
+		MatButtonModule
+	],
   declarations: [
     AppComponent,
     HomeComponent,
