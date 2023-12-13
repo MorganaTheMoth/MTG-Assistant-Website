@@ -4,11 +4,11 @@
     grid-template-rows: repeat(2, 1fr);
     height: 100vh;
 }
-  
+
 .player_box {
   position: relative;
   display: flex;
-  height: 50vh;
+  height: 49vh;
   width: 50vw;
   flex-direction: column;
   justify-content: center;

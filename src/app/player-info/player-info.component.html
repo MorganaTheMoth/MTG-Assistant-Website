@@ -1,14 +1,16 @@
-<div class="lifetotal_overlay">
-	<p class="lifetotal_text">{{ lifeTotal }}</p>
+<div #lifeTrackingWrapper class="wrapper">
+	<div class="lifetotal_overlay">
+		<p class="lifetotal_text">{{ lifeTotal }}</p>
+	</div>
+	<button
+		class="lifechange_button"
+		(mousedown)="startIncrementing()"
+		(mouseup)="stopIncrementing()"
+	>+</button>
+	<button
+		class="lifechange_button"
+		type="button"
+		(mousedown)="startDecrementing()"
+		(mouseup)="stopDecrementing()"
+	>-</button>
 </div>
-<button
-	class="lifechange_button"
-	(mousedown)="startIncrementing()"
-	(mouseup)="stopIncrementing()"
-></button>
-<button
-	class="lifechange_button"
-	type="button"
-	(mousedown)="startDecrementing()"
-	(mouseup)="stopDecrementing()"
-></button>
