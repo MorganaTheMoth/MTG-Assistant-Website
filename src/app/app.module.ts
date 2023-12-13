@@ -7,6 +7,7 @@ import {HomeComponent} from "./Components/home/home.component";
 import {DevHelpComponent} from "./Components/dev-help/dev-help.component";
 import {LifeTrackerComponent} from "./Components/life-tracker/life-tracker.component";
 import {MatButtonModule} from "@angular/material/button";
+import { PlayerInfoComponent } from './player-info/player-info.component';
 
 
 const appRoutes: Routes = [
@@ -23,13 +24,14 @@ const appRoutes: Routes = [
 		RouterModule.forRoot(
 			appRoutes, {enableTracing: true}
 		),
-		MatButtonModule
+		MatButtonModule,
 	],
   declarations: [
     AppComponent,
     HomeComponent,
     DevHelpComponent,
-    LifeTrackerComponent
+    LifeTrackerComponent,
+	PlayerInfoComponent
   ],
   bootstrap: [AppComponent]
 })

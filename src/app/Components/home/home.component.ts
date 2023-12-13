@@ -18,5 +18,8 @@ export class HomeComponent implements OnInit {
 	public navToCDevHelp() : void{
 		this.router.navigate(['/devHelp']);
 	}
+  public navToLifeTracker() : void{
+		this.router.navigate(['/lifeTracker']);
+	}
 
 }
