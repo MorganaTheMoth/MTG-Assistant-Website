@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PlayerInfoComponent } from 'src/app/player-info/player-info.component';
 
 @Component({
   selector: 'app-life-tracker',

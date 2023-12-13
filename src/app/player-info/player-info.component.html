@@ -1,1 +1,7 @@
-<p>player-info works!</p>
+<div class="playerinfo_container">
+    <div class="lifetotal_overlay">
+        <p class="lifetotal_text">{{lifeTotal}}</p>
+    </div>
+    <button class="lifechange_button" type="button" (click)="increment()">Increment</button>
+    <button class="lifechange_button" type="button" (click)="decrement()">Decrement</button>
+</div>

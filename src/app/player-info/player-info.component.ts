@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './player-info.component.css'
 })
 export class PlayerInfoComponent {
+   lifeTotal: number = 40
 
+   increment = () => {
+    this.lifeTotal += 1
+   }
+   decrement = () => {
+    this.lifeTotal -= 1
+   }
 }
