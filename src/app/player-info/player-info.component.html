@@ -1,8 +1,14 @@
-<!-- <div class="playerinfo_container"> -->
-    <div class="lifetotal_overlay">
-        <p class="lifetotal_text">{{lifeTotal}}</p>
-    </div>
-    <button class="lifechange_button" type="button" (click)="increment()"></button>
-    <button class="lifechange_button" type="button" (click)="decrement()"></button>
-    
-<!-- </div> -->
+<div class="lifetotal_overlay">
+	<p class="lifetotal_text">{{ lifeTotal }}</p>
+</div>
+<button
+	class="lifechange_button"
+	(mousedown)="startIncrementing()"
+	(mouseup)="stopIncrementing()"
+></button>
+<button
+	class="lifechange_button"
+	type="button"
+	(mousedown)="startDecrementing()"
+	(mouseup)="stopDecrementing()"
+></button>
