@@ -1,15 +1,35 @@
 .lifetracker_screen_container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+	align-content: center;
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    height: 100vh;
+    height: 100%;
+	width: 100vw;
+}
+#lifetracker_screen_bottom_row{
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(1, 2fr);
+	height: 49vh;
+}
+#lifetracker_screen_top_row{
+	grid-template-columns: repeat(2, 2fr);
+	grid-template-rows: repeat(1, 2fr);
+}
+#player_box_33_override{
+	width: 33vh;
+}
+#player_box_50_override{
+	width: 50vh;
+}
+#player_box_25_override{
+	width: 25vh;
 }
 
 .player_box {
   position: relative;
   display: flex;
   height: 49vh;
-  width: 50vw;
+  width: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;

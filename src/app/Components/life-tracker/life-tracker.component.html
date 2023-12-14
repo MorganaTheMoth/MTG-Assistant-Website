@@ -1,10 +1,11 @@
 <div class="lifetracker_screen_container">
-    <div class="cross">
-        <div class="horizontal-line"></div>
-        <div class="vertical-line"></div>
-      </div>
-    <app-player-info class="player_box"></app-player-info>
-    <app-player-info class="player_box"></app-player-info>
-    <app-player-info class="player_box"></app-player-info>
-    <app-player-info class="player_box"></app-player-info>
+	<div class="lifetracker_screen_container" id="lifetracker_screen_top_row">
+		<div class="vertical-line"></div>
+		<app-player-info class="player_box"  *ngFor="let n of top_row_array" ></app-player-info>
+	</div>
+	<div class="horizontal-line"></div>
+	<div class="lifetracker_screen_container" id="lifetracker_screen_bottom_row">
+		<div class="vertical-line"></div>
+		<app-player-info class="player_box" *ngFor="let n of bottom_row_array "></app-player-info>
+	</div>
 </div>
